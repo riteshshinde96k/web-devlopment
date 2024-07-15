@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="child 1.jpg"
+            alt="Image 1.1">
+        <img src="child 2.jpg"
+            alt="Image 1.2" >
+        <img src="child 3.jpg"
+            alt="Image 1.3" >
+        <img src="child 4.jpg"
+            alt="Image 1.4">   
+        
+        <img src="family 1.avif"
+            alt="Image 2.1">
+        <img src="family 2.jpg"
+            alt="Image 2.2">
+        <img src="family 3.jpg"
+            alt="Image 2.3"> 
+        <img src="Family 4.jpg"
+            alt="Image 2.4">   
+        <img src="place 1.jpg"
+            alt="Image 3.1">
+        <img src="place 2.jpeg"
+            alt="Image 3.2">
+        <img src="place 3.jpeg"
+            alt="Image 3.3">
+        <img src="place 4.webp"
+            alt="Image 3.4">
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <!-- Thumbnails container -->
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
